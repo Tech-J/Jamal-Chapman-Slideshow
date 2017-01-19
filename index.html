@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+</head>
+<header><h1>Conduits Of Energy</h1></header>
+<body>
+<div id="slideshow">
+<div id="title"><h4>Kanye's Idol</h4></div>
+<img class="images" src="hford.jpeg">
+<img class="images" src="yeeNoLooking.gif">
+<img class="images" src="hhughes.jpg">
+<img class="images" src="yeeGod.gif">
+<img class="images" src="yeeGod1.gif">
+<img class="images" src="htruman.jpg">
+<img class="images" src="yeeF.gif">
+<img class="images" src="yeeF1.gif">
+<img class="images" src="sjobs.jpg">
+<img class="images" src="yeeFoolish.gif">
+<img class="images" src="yeeFoolish1.gif">
+<img class="images" src="wdisney.jpeg">
+<img class="images" src="yeeSway.gif">
+<img class="images" src="yeeSway1.gif">
+<img class="images" src="yeeSway2.gif">
+<img class="images" src="yeeSway3.gif">
+<img class="images" src="yeeSway1.gif">
+<img class="images" src="end1.gif">
+<img class="images" src="end.gif">
+
+<button onclick="plusDivs(-1)">Back</button>
+<button onclick="plusDivs(+1)">Next</button>
+</div>
+
+
+
+
+<script type="text/javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n)
+{
+	showDivs(slideIndex += n);
+}
+
+function showDivs(n)
+{
+	var i;
+	var x = document.getElementsByClassName("images");
+	if (n > x.length)
+	{
+		slideIndex=1;
+	}
+	if (n < 1) 
+	{
+		slideIndex = x.length;
+	}
+	for (i = 0; i < x.length; i++)
+	{
+		x[i].style.display = "none";
+	}	
+	x[slideIndex-1].style.display = "block";
+}	
+</script>
+</body>
+<footer></footer>
+</html>
